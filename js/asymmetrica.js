@@ -113,7 +113,9 @@
     grid: [
       { src: '../assets/grid-1.webp', alt: 'Пульт FPV',            ratio: 1400 / 800 },
       { src: '../assets/grid-2.webp', alt: 'Пілоти на полігоні',   ratio: 1400 / 800 },
-      { src: '../assets/grid-3.webp', alt: 'FPV-літак на стенді',  ratio: 1400 / 800 }
+      { src: '../assets/grid-3.webp', alt: 'FPV-літак на стенді',  ratio: 1400 / 800 },
+      { src: '../assets/grid-4.webp', alt: 'Крило на пусковому станку', ratio: 1400 / 788 },
+      { src: '../assets/grid-5.webp', alt: 'Крило в польоті',           ratio: 1400 / 788 }
     ]
   };
 
