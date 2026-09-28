@@ -1,0 +1,233 @@
+/* =====================================================================
+   SPEXTR КРИЛА — wing product line page
+   Same design system as k2.css / gstation.css. Reference canvas: 1920px wide.
+   ===================================================================== */
+
+:root { --bg: #070707; --bg-deep: #070707; --ink: #fefefe; --ink-mute: #c9c9c9; --ink-spec: #e8e8e8; --accent: #FFCA08; --gutter: clamp(20px, 7.3vw, 140px); /* standard side padding, shared site-wide */
+  --font: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif; }
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body { background: var(--bg); color: var(--ink); font-family: var(--font); overflow-x: hidden; }
+
+img, .wg-hero__tagline span { display: block; }
+
+a { color: var(--accent); text-decoration: none; }
+
+a:hover { color: #fff; }
+
+.wg { position: relative; width: 100%; overflow: hidden; background: var(--bg); }
+
+:where(a, button):focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* =====================================================================
+   01 HERO
+   ===================================================================== */
+
+.wg-hero { position: relative; width: 100%; aspect-ratio: 562 / 558; max-height: 78vh; overflow: hidden; }
+
+.wg-hero__bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+
+.wg-hero__scrim { position: absolute; inset: 0; background: linear-gradient(180deg,
+    rgba(7,7,7,.35) 0%, transparent 30%, rgba(7,7,7,.55) 82%, var(--bg) 100%); }
+
+.wg-hero__tick { position: absolute; top: 64px; height: 5px; background: #fff; opacity: .85; display: none; }
+
+.wg-hero__tick--left { left: 19.8%; width: 180px; }
+
+.wg-hero__tick--right { left: 67.7%; width: 250px; }
+
+.wg-hero__row { position: relative; z-index: 2; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 190px var(--gutter) 0; padding-top: 120px; flex-wrap: wrap; row-gap: 16px; }
+
+.wg-back { position: absolute; z-index: 3; left: var(--gutter); top: 70px; font-size: 12px; font-weight: 600; letter-spacing: .12em; color: var(--ink); text-transform: uppercase; text-shadow: 0 2px 6px rgba(0,0,0,.5); transition: color .18s; }
+
+.wg-back:hover, .wg-mod__title--accent { color: var(--accent); }
+
+.wg-hero__tagline { font-size: 14px; font-weight: 600; line-height: 1.5; letter-spacing: .08em; }
+
+.wg-hero__logo { width: 84px; height: auto; object-fit: contain; margin-top: 0; }
+
+.wg-socials { display: grid; grid-template-columns: repeat(4, 30px); gap: 10px; flex-basis: 100%; margin-top: 4px; justify-content: start; }
+
+.wg-social { width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; color: var(--ink); opacity: .9; transition: opacity .18s, transform .18s, color .18s; }
+
+.wg-social svg { width: 22px; height: 22px; }
+
+.wg-social:hover { opacity: 1; transform: translateY(-2px); color: var(--accent); }
+
+/* mobile burger + dropdown menu (hidden on desktop) ------------------ */
+
+.burger { display: flex; flex-direction: column; justify-content: space-between; position: absolute; z-index: 4; right: var(--gutter); top: 70px; width: 30px; height: 22px; padding: 0; background: none; border: none; cursor: pointer; }
+
+.burger span { display: block; width: 100%; height: 2px; background: var(--ink); transition: transform .25s ease, opacity .2s ease; }
+
+.burger[aria-expanded="true"] span:nth-child(1) { transform: translateY(10px) rotate(45deg); }
+
+.burger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+
+.burger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-10px) rotate(-45deg); }
+
+.menu-backdrop { display: none; position: fixed; inset: 0; z-index: 88; background: rgba(0,0,0,.55); opacity: 0; pointer-events: none; transition: opacity .25s ease; }
+
+.menu-backdrop.is-open { display: block; opacity: 1; pointer-events: auto; }
+
+.mobile-menu { display: flex; flex-direction: column; gap: 4px; position: fixed; top: 0; right: 0; bottom: 0; z-index: 89; width: min(78vw, 320px); padding: 88px 28px 32px; background: #0a0a0a; border-left: 1px solid rgba(255,255,255,.1); transform: translateX(100%); transition: transform .3s cubic-bezier(.2,0,.1,1); overflow-y: auto; }
+
+.mobile-menu.is-open { transform: translateX(0); }
+
+.mobile-menu__close { position: absolute; top: 20px; right: 20px; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; background: none; border: none; color: var(--ink); cursor: pointer; transition: color .18s; }
+
+.mobile-menu__close svg { width: 22px; height: 22px; }
+
+.mobile-menu__close:hover, .mobile-menu__link:hover, .mobile-menu__sublink:hover { color: var(--accent); }
+
+.mobile-menu__link { display: block; padding: 14px 0; color: var(--ink); font-size: 16px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; border-bottom: 1px solid rgba(255,255,255,.1); }
+
+.mobile-menu__sub { display: flex; flex-direction: column; padding: 2px 0 10px 16px; }
+
+.mobile-menu__sublink { padding: 10px 0; color: var(--ink-mute); font-size: 13px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
+
+body.is-menu-open { overflow: hidden; }
+
+@media (min-width: 721px) {
+
+  .burger, .mobile-menu, .menu-backdrop { display: none; }
+
+}
+
+/* =====================================================================
+   02 INTRO
+   ===================================================================== */
+
+.wg-intro { position: relative; background: var(--bg); padding: 80px var(--gutter) 120px; padding-bottom: 64px; }
+
+.wg-intro p { font-size: 13px; line-height: 1.65; font-weight: 500; letter-spacing: .03em; text-align: left; text-wrap: pretty; }
+
+/* =====================================================================
+   03-06 PRODUCT LINE (one section per wing model)
+   ===================================================================== */
+
+.wg-mod { position: relative; background: var(--bg-deep); padding: 48px var(--gutter); }
+
+.wg-mod + .wg-mod { padding-top: 0; }
+
+.wg-mod__head { display: flex; align-items: flex-start; justify-content: space-between; gap: 32px; flex-direction: column; }
+
+.wg-mod__unit { width: 100%; max-width: 100%; object-fit: contain; flex: none; }
+
+.wg-mod__unit--a { animation: wg-float 6.5s ease-in-out infinite; }
+
+.wg-mod__unit--b { animation: wg-float 5.6s ease-in-out infinite; animation-delay: -1.8s; }
+
+.wg-mod__lead { flex: 1; display: flex; flex-direction: column; align-items: flex-start; gap: 34px; }
+
+.wg-mod__title { font-size: 28px; line-height: 1.1; font-weight: 800; letter-spacing: .02em; color: var(--accent); }
+
+.wg-mod__sub { max-width: none; font-size: 13px; line-height: 1.7; font-weight: 500; letter-spacing: .06em; color: var(--ink-mute); text-align: left; }
+
+.wg-mod__arrow { width: 52px; height: 52px; color: var(--accent); margin-top: 8px; }
+
+/* spec table ------------------------------------------------------- */
+
+.wg-specs { display: flex; flex-direction: column; gap: 14px; padding-top: 40px; }
+
+.wg-spec { display: flex; align-items: baseline; gap: 6px 12px; font-size: 12px; font-weight: 600; letter-spacing: .06em; color: var(--ink-spec); flex-wrap: wrap; }
+
+.wg-spec dt { white-space: nowrap; font-size: 12px; }
+
+.wg-spec dd { margin: 0; white-space: nowrap; }
+
+.wg-spec__rule { flex: 1; height: 0; background: rgba(255,255,255,.32); flex-basis: 100%; }
+
+/* description + optional block --------------------------------------- */
+
+.wg-desc { padding-top: 32px; max-width: 720px; }
+
+.wg-desc p { font-size: 13px; line-height: 1.7; font-weight: 500; letter-spacing: .02em; color: var(--ink-mute); text-align: left; text-wrap: pretty; }
+
+.wg-desc b { color: var(--accent); }
+
+.wg-optional { padding-top: 28px; max-width: 720px; display: flex; flex-direction: column; gap: 14px; }
+
+.wg-optional__title { display: block; font-size: 14px; letter-spacing: .06em; color: var(--accent); }
+
+.wg-optional__list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+
+.wg-optional__list li { position: relative; padding-left: 16px; font-size: 12px; line-height: 1.6; font-weight: 500; letter-spacing: .02em; color: var(--ink-spec); }
+
+.wg-optional__list li::before { content: '—'; position: absolute; left: 0; color: var(--accent); }
+
+.wg-optional__row { display: flex; flex-direction: column; gap: 4px; font-size: 12px; line-height: 1.6; letter-spacing: .02em; color: var(--ink-spec); }
+
+.wg-optional__row b { font-weight: 600; letter-spacing: .06em; color: var(--ink); }
+
+@media (min-width: 481px) {
+
+  .wg-spec { gap: 16px; flex-wrap: initial; }
+
+  .wg-spec dt { font-size: inherit; }
+
+  .wg-spec__rule { height: 1px; flex-basis: initial; }
+
+}
+
+@media (min-width: 901px) {
+
+  .wg-hero__row { gap: 40px; align-items: flex-start; padding-top: 140px; flex-wrap: initial; }
+
+  .wg-back { top: 110px; }
+
+  .wg-hero__tagline { font-size: 16px; }
+
+  .wg-hero__logo { width: 120px; margin-top: -14px; }
+
+  .wg-socials { gap: 8px; grid-template-columns: repeat(2, 34px); flex-basis: initial; justify-content: initial; margin-top: initial; }
+
+  .wg-social { width: 34px; height: 34px; }
+
+  .wg-intro { padding-bottom: 120px; }
+
+  .wg-intro p { font-size: 17px; line-height: 1.75; text-align: justify; }
+
+  .wg-mod { padding-top: 90px; padding-bottom: 90px; }
+
+  .wg-mod__head { gap: 48px; align-items: center; flex-direction: initial; }
+
+  .wg-mod__unit { width: 50%; }
+
+  .wg-mod__title { font-size: 36px; }
+
+  .wg-mod__sub { max-width: 520px; font-size: 14px; text-align: justify; }
+
+  .wg-mod__arrow { width: 78px; height: 78px; }
+
+  .wg-specs { padding-top: 60px; }
+
+  .wg-spec { font-size: 13px; letter-spacing: .1em; }
+
+}
+
+@media (min-width: 1401px) {
+
+  .wg-hero { max-height: 1060px; }
+
+  .wg-hero__tick { display: initial; }
+
+  .wg-hero__row { padding-top: 190px; }
+
+  .wg-mod__head { gap: 70px; }
+
+  .wg-mod__unit { width: 640px; }
+
+}
+
+@keyframes wg-float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-16px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; scroll-behavior: auto !important; }
+}

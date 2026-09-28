@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SPEXTR K2 — Модульний наземний роботизований комплекс</title>
+  <meta name="description" content="SPEXTR K2 — мультифункціональний НРК для логістики, розвідки, мінування та місій «камікадзе». Bucket Mod і Minelayer Mod." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/k2.css?v=6" />
+  <link rel="stylesheet" href="../css/contact-block.css?v=11" />
+</head>
+<body>
+  <div class="k2">
+
+    <!-- ============ 01 HERO ============ -->
+    <section class="k2-hero">
+      <img class="k2-hero__bg" src="../assets/k2-hero.webp" alt="SPEXTR K2" fetchpriority="high" />
+      <span class="k2-hero__scrim"></span>
+      <span class="k2-hero__tick k2-hero__tick--left"></span>
+      <span class="k2-hero__tick k2-hero__tick--right"></span>
+
+      <a class="k2-back" href="index.html#products">← НА ГОЛОВНУ</a>
+
+      <button class="burger js-burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="k2-hero__row">
+        <p class="k2-hero__tagline">
+          <span>MILLITARY</span>
+          <span>ROBOTICS</span>
+          <span>TECHNOLOGY</span>
+        </p>
+
+        <img class="k2-hero__logo" src="../assets/k2-logo.webp" alt="SPEXTR" />
+
+        <div class="k2-socials">
+          <a class="k2-social" href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none" /></svg>
+          </a>
+          <a class="k2-social" href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V7c0-.7.5-1 1.2-1H17V3h-2.5C11.9 3 11 4.6 11 6.4v2.1H9v3h2V21h3v-9.5h2.3l.4-3H14z" /></svg>
+          </a>
+          <a class="k2-social" href="#" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3c.3 2.1 1.5 3.6 3.5 3.9v2.4c-1.2.1-2.3-.2-3.5-.8v5.6c0 3.2-2.3 5.9-5.6 5.9-2.9 0-5.1-2.1-5.1-4.9 0-3 2.5-5 5.7-4.6v2.6c-.5-.2-1-.2-1.5-.1-1.1.2-1.8 1-1.7 2.2.1 1.1 1 1.9 2.1 1.9 1.3 0 2.2-1 2.2-2.5V3h3.4z" /></svg>
+          </a>
+          <a class="k2-social" href="#" aria-label="Threads">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.3 11.2c-.1 0-.2-.1-.3-.1-.2-3-1.8-4.7-4.5-4.7-1.6 0-3 .7-3.8 2l1.5 1c.6-.9 1.5-1.1 2.3-1.1 1 0 1.8.3 2.2 1 .3.4.5 1 .5 1.7-.7-.1-1.4-.2-2.2-.1-2.4.1-3.9 1.5-3.8 3.4.1 1 .6 1.8 1.4 2.3.7.4 1.6.6 2.5.6 1.2-.1 2.2-.5 2.8-1.4.5-.6.8-1.4.9-2.4.6.4 1.1.9 1.3 1.5.5 1.1.5 2.8-.9 4.2-1.2 1.2-2.7 1.8-4.9 1.8-2.4 0-4.2-.8-5.4-2.3C4.6 17 4 15 4 12.5s.6-4.5 1.7-5.9C6.9 5.1 8.7 4.3 11.1 4.3c2.4 0 4.3.8 5.4 2.4.6.8 1 1.8 1.2 3l1.9-.5c-.3-1.5-.8-2.8-1.6-3.8C17.5 3.1 14.9 2 11.9 2h-.8C8.1 2 5.8 3 4.3 4.9 2.9 6.6 2.2 9 2.1 11.9v.2c0 2.9.7 5.3 2.2 7 1.5 1.9 3.8 2.9 6.8 2.9h.8c2.7 0 4.6-.7 6.2-2.3 2.1-2.1 2-4.7 1.3-6.3-.5-1.1-1.4-2-2.6-2.7l-.5-.4z" /></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <span class="menu-backdrop js-menu-backdrop"></span>
+    <nav id="mobile-menu" class="mobile-menu js-mobile-menu" aria-label="Мобільна навігація">
+      <button class="mobile-menu__close js-menu-close" type="button" aria-label="Закрити меню">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18" /></svg>
+      </button>
+      <a class="mobile-menu__link" href="index.html#about">ПРО НАС</a>
+      <div class="mobile-menu__group">
+        <a class="mobile-menu__link" href="index.html#products">ПРОДУКТИ</a>
+        <div class="mobile-menu__sub">
+          <a class="mobile-menu__sublink" href="kryla.html">КРИЛА</a>
+          <a class="mobile-menu__sublink" href="k2.html" aria-current="page">НРК</a>
+          <a class="mobile-menu__sublink" href="gstation.html">ДОДАТКОВО</a>
+        </div>
+      </div>
+      <a class="mobile-menu__link" href="#contact">КОНТАКТИ</a>
+    </nav>
+
+    <!-- ============ 02 INTRO ============ -->
+    <section class="k2-intro">
+      <p>МУЛЬТИФУНКЦІОНАЛЬНИЙ НАЗЕМНИЙ РОБОТИЗОВАНИЙ КОМПЛЕКС, З УНІКАЛЬНИМИ ПОЗАШЛЯХОВИМИ МОЖЛИВОСТЯМИ, КОМПАКТНИМИ РОЗМІРАМИ ТА МІЦНОЮ КОНСТРУКЦІЄЮ, ЩО ВИКОРИСТОВУЄТЬСЯ ДЛЯ ЛОГІСТИКИ, РОЗВІДКИ, МІНУВАННЯ, А ТАКОЖ МІСІЙ «КАМІКАДЗЕ». КОНСТРУКЦІЯ ПЕРЕДБАЧАЄ ШВИДКУ ЗМІНУ МОДУЛІВ ПІД РІЗНІ ЗАДАЧІ</p>
+    </section>
+
+    <!-- ============ 03 FIELD PROOF ============ -->
+    <section class="k2-field">
+      <img class="k2-field__bg" src="../assets/k2-field-bg.webp" alt="" loading="lazy" decoding="async" />
+      <span class="k2-field__scrim"></span>
+
+      <div class="k2-field__inner">
+        <div class="k2-video">
+          <img src="../assets/k2-video-poster.webp" alt="Робота комплексу" loading="lazy" decoding="async" />
+          <button class="k2-play" type="button" aria-label="Відтворити відео">
+            <svg viewBox="0 0 24 24" fill="#fff"><path d="M8 5l11 7-11 7z" /></svg>
+          </button>
+        </div>
+
+        <div class="k2-field__row">
+          <div class="k2-field__text">
+            <p><b>SPEXTR</b> ПРИСУТНІЙ ТАМ, ДЕ ТЕХНІКА ПРОХОДИТЬ НАЙЖОРСТКІШУ ПЕРЕВІРКУ — ПОРУЧ ІЗ ТИМИ, ХТО ЩОДНЯ ПРАЦЮЄ НА ЛІНІЇ ОБОРОНИ.</p>
+            <p>САМЕ ТАМ ФОРМУЄТЬСЯ РЕАЛЬНЕ РОЗУМІННЯ: ЩО МАЄ ВИТРИМУВАТИ НАЗЕМНИЙ РОБОТИЗОВАНИЙ КОМПЛЕКС, ЯКІ ЗАДАЧІ ВІН ПОВИНЕН ЗАКРИВАТИ, ДЕ СЛАБКІ МІСЦЯ, А ДЕ — СПРАВЖНЯ ПЕРЕВАГА.</p>
+            <p>КОЖНА ПОЇЗДКА, КОЖНА РОЗМОВА З ОПЕРАТОРАМИ, КОЖНЕ ТЕСТУВАННЯ В РЕАЛЬНИХ УМОВАХ — ЦЕ ДОСВІД, ЯКИЙ НЕМОЖЛИВО ОТРИМАТИ В ТЕОРІЇ.</p>
+          </div>
+          <img class="k2-field__mark" src="../assets/k2-wordmark.webp" alt="SPEXTR" loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 04 BUCKET MOD ============ -->
+    <section class="k2-mod">
+      <div class="k2-mod__head">
+        <img class="k2-mod__unit k2-mod__unit--a" src="../assets/k2-bucket.webp" alt="SPEXTR K2 Bucket Mod" loading="lazy" decoding="async" />
+        <div class="k2-mod__lead">
+          <h2 class="k2-mod__title">SPEXTR K2<br />BUCKET MOD</h2>
+          <p class="k2-mod__sub">МОДУЛЬНИЙ НАЗЕМНИЙ РОБОТИЗОВАНИЙ КОМПЛЕКС, РОЗРОБЛЕНИЙ ДЛЯ БЕЗПЕЧНОЇ ДОСТАВКИ ВАНТАЖІВ У ЗОНАХ ПІДВИЩЕНОГО РИЗИКУ.</p>
+          <svg class="k2-mod__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 7L7 17" /><path d="M7 8v9h9" /></svg>
+        </div>
+      </div>
+
+      <div class="k2-mod__body">
+        <p>В ДАНОМУ ВИКОНАННІ ПЕРЕВАГА ДРОНУ В МАЛОПОМІТНОСТІ І НАДНИЗЬКИЙ ГЕНЕРАЦІЇ ШУМУ. ПЛАТФОРМА ОСНАЩЕНА ЛОГІСТИЧНИМ МОДУЛЕМ, ЩО ДОЗВОЛЯЄ ТРАНСПОРТУВАТИ СПОРЯДЖЕННЯ, БОЄКОМПЛЕКТ, МЕДИЧНІ ЗАСОБИ ТА ІНШІ ВАНТАЖІ БЕЗ ЗАЛУЧЕННЯ ОСОБОВОГО СКЛАДУ.</p>
+        <p>СИСТЕМА ПЕРЕДБАЧАЄ ШВИДКУ ЗАМІНУ ДОДАТКОВИХ МОДУЛІВ, ЗОКРЕМА МІНУВАЛЬНОГО МОДУЛЯ, ДОПОМІЖНОГО АКУМУЛЯТОРНОГО МОДУЛЯ ТА МОДУЛЯ ЗВ'ЯЗКУ, ЩО ДОЗВОЛЯЄ КОРИСТУВАЧУ БУТИ ДУЖЕ АДАПТИВНИМ В ЗАСТОСУВАННІ.</p>
+      </div>
+
+      <dl class="k2-specs">
+        <div class="k2-spec"><dt>ВАГА</dt><span class="k2-spec__rule"></span><dd>55 КГ</dd></div>
+        <div class="k2-spec"><dt>ВАНТАЖ</dt><span class="k2-spec__rule"></span><dd>60 КГ</dd></div>
+        <div class="k2-spec"><dt>ПРИВІД</dt><span class="k2-spec__rule"></span><dd>4 WD</dd></div>
+        <div class="k2-spec"><dt>КЛІРЕНС</dt><span class="k2-spec__rule"></span><dd>140 ММ</dd></div>
+        <div class="k2-spec"><dt>ШВИДКІСТЬ ДО</dt><span class="k2-spec__rule"></span><dd>30 КМ/ГОД</dd></div>
+        <div class="k2-spec"><dt>ЗАПАС ХОДУ</dt><span class="k2-spec__rule"></span><dd>50+ КМ</dd></div>
+        <div class="k2-spec"><dt>КЕРУВАННЯ</dt><span class="k2-spec__rule"></span><dd>ДО 7 КМ</dd></div>
+      </dl>
+      <p class="k2-ip">РІВЕНЬ ВОЛОГОЗАХИСТУ&nbsp;&nbsp;IP66</p>
+    </section>
+
+    <!-- ============ 05 BUCKET GALLERY ============ -->
+    <section class="k2-gallery k2-gallery--3">
+      <img class="k2-shot" src="../assets/k2-bucket-shot-1.webp" alt="SPEXTR K2 Bucket Mod у полі" loading="lazy" decoding="async" />
+      <img class="k2-shot" src="../assets/k2-bucket-shot-2.webp" alt="SPEXTR K2 Bucket Mod з вантажем" loading="lazy" decoding="async" />
+      <img class="k2-shot" src="../assets/k2-bucket-shot-3.webp" alt="SPEXTR K2 Bucket Mod на маршруті" loading="lazy" decoding="async" />
+    </section>
+
+    <!-- ============ 06 MINELAYER MOD ============ -->
+    <section class="k2-mod">
+      <div class="k2-mod__head">
+        <img class="k2-mod__unit k2-mod__unit--b" src="../assets/k2-minelayer.webp" alt="SPEXTR K2 Minelayer Mod" loading="lazy" decoding="async" />
+        <div class="k2-mod__lead">
+          <h2 class="k2-mod__title k2-mod__title--accent">SPEXTR K2<br />MINELAYER MOD</h2>
+          <p class="k2-mod__sub">МОДУЛЬНИЙ НАЗЕМНИЙ РОБОТИЗОВАНИЙ КОМПЛЕКС, РОЗРОБЛЕНИЙ ДЛЯ ДИСТАНЦІЙНОГО МІНУВАННЯ ТА ІНЖЕНЕРНИХ ЗАВДАНЬ У ЗОНАХ ПІДВИЩЕНОГО РИЗИКУ.</p>
+          <svg class="k2-mod__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 7L7 17" /><path d="M7 8v9h9" /></svg>
+        </div>
+      </div>
+
+      <div class="k2-mod__body">
+        <p>В ДАНОМУ ВИКОНАННІ ПЕРЕВАГА ДРОНУ В МАЛОПОМІТНОСТІ І НАДНИЗЬКИЙ ГЕНЕРАЦІЇ ШУМУ. ПЛАТФОРМА ОСНАЩЕНА МІНУВАЛЬНИМ МОДУЛЕМ, ЩО ДОЗВОЛЯЄ ВСТАНОВЛЮВАТИ ПРОТИТАНКОВІ МІНИ НА ВІДДАЛІ, БЕЗ ЗАЛУЧЕННЯ ОСОБОВОГО СКЛАДУ.</p>
+        <p>СИСТЕМА ПЕРЕДБАЧАЄ ШВИДКУ ЗАМІНУ ДОДАТКОВИХ МОДУЛІВ, ЗОКРЕМА ЛОГІСТИЧНОГО МОДУЛЯ, ДОПОМІЖНОГО АКУМУЛЯТОРНОГО МОДУЛЯ ТА МОДУЛЯ ЗВ'ЯЗКУ, ЩО ДОЗВОЛЯЄ КОРИСТУВАЧУ БУТИ ДУЖЕ АДАПТИВНИМ В ЗАСТОСУВАННІ.</p>
+      </div>
+
+      <dl class="k2-specs">
+        <div class="k2-spec"><dt>ВАГА</dt><span class="k2-spec__rule"></span><dd>55 КГ</dd></div>
+        <div class="k2-spec"><dt>ВАНТАЖ</dt><span class="k2-spec__rule"></span><dd>60 КГ</dd></div>
+        <div class="k2-spec"><dt>ПРИВІД</dt><span class="k2-spec__rule"></span><dd>4 WD</dd></div>
+        <div class="k2-spec"><dt>КЛІРЕНС</dt><span class="k2-spec__rule"></span><dd>140 ММ</dd></div>
+        <div class="k2-spec"><dt>ШВИДКІСТЬ ДО</dt><span class="k2-spec__rule"></span><dd>30 КМ/ГОД</dd></div>
+        <div class="k2-spec"><dt>ЗАПАС ХОДУ</dt><span class="k2-spec__rule"></span><dd>50+ КМ</dd></div>
+        <div class="k2-spec"><dt>КЕРУВАННЯ</dt><span class="k2-spec__rule"></span><dd>ДО 7 КМ</dd></div>
+      </dl>
+      <p class="k2-ip">РІВЕНЬ ВОЛОГОЗАХИСТУ&nbsp;&nbsp;IP66</p>
+    </section>
+
+    <!-- ============ 07 MINELAYER GALLERY ============ -->
+    <section class="k2-gallery k2-gallery--2">
+      <img class="k2-shot" src="../assets/k2-minelayer-shot-1.webp" alt="SPEXTR K2 Minelayer Mod" loading="lazy" decoding="async" />
+      <img class="k2-shot" src="../assets/k2-minelayer-shot-2.webp" alt="SPEXTR K2 Minelayer Mod у роботі" loading="lazy" decoding="async" />
+    </section>
+
+    <!-- ============ CONTACT (ЗАЯВКА) ============ -->
+    <section id="contact" class="pc-contact">
+      <div class="pc-panel">
+        <form class="pc-form js-pc-form" novalidate>
+          <div class="pc-form__inner">
+            <div class="pc-form__head">
+              <b class="pc-form__heading">ЗВ'ЯЗАТИСЬ З НАМИ</b>
+              <button type="submit" class="pc-cta">НАДІСЛАТИ</button>
+            </div>
+            <p class="pc-form__subheading">Заповніть всі поля</p>
+            <div class="pc-form__cols">
+              <div class="pc-form__col pc-form__col--msg">
+                <label class="pc-field-group pc-field-group--grow">
+                  <div class="pc-field-group__head">
+                    <b class="pc-form__label">ЗАПИТ</b>
+                    <span class="pc-field-error">Заповніть це поле</span>
+                  </div>
+                  <textarea name="message" required maxlength="2000" class="pc-field pc-field--area" placeholder="Опишіть вашу задачу"></textarea>
+                </label>
+              </div>
+              <div class="pc-form__col">
+                <label class="pc-field-group">
+                  <div class="pc-field-group__head">
+                    <b class="pc-form__label">ІМ'Я</b>
+                    <span class="pc-field-error">Заповніть це поле</span>
+                  </div>
+                  <input name="name" required maxlength="80" class="pc-field" placeholder="Ім'я" />
+                </label>
+                <label class="pc-field-group">
+                  <div class="pc-field-group__head">
+                    <b class="pc-form__label">EMAIL</b>
+                    <span class="pc-field-error">Заповніть це поле</span>
+                  </div>
+                  <input name="email" type="email" required maxlength="100" class="pc-field" placeholder="name@email.com" />
+                </label>
+                <label class="pc-field-group">
+                  <div class="pc-field-group__head">
+                    <b class="pc-form__label">НАЗВА ОРГАНІЗАЦІЇ</b>
+                    <span class="pc-field-error">Заповніть це поле</span>
+                  </div>
+                  <input name="org" required maxlength="100" class="pc-field" placeholder="Компанія / підрозділ" />
+                </label>
+                <label class="pc-field-group">
+                  <div class="pc-field-group__head">
+                    <b class="pc-form__label">КРАЇНА</b>
+                    <span class="pc-field-error">Заповніть це поле</span>
+                  </div>
+                  <div class="country-auto">
+                    <input name="country" required maxlength="60" class="pc-field" placeholder="Почніть вводити назву країни" autocomplete="off" role="combobox" aria-expanded="false" aria-autocomplete="list" />
+                    <svg class="country-auto__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg>
+                    <ul class="country-auto__list" role="listbox"></ul>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="pc-footer">
+        <b>ТЕЛЕФОН: +38 000 0000 000</b>
+        <a class="pc-footer-link" href="mailto:info@asymmetrica.com.ua">info@asymmetrica.com.ua</a>
+        <div class="pc-socials">
+          <a class="pc-social" href="https://www.instagram.com/spextrobotix/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none" /></svg>
+          </a>
+          <a class="pc-social" href="https://www.facebook.com/people/Spextr-Robotics/61578538332726/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V7c0-.7.5-1 1.2-1H17V3h-2.5C11.9 3 11 4.6 11 6.4v2.1H9v3h2V21h3v-9.5h2.3l.4-3H14z" /></svg>
+          </a>
+          <a class="pc-social" href="https://www.tiktok.com/@spextr.robotix" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3c.3 2.1 1.5 3.6 3.5 3.9v2.4c-1.2.1-2.3-.2-3.5-.8v5.6c0 3.2-2.3 5.9-5.6 5.9-2.9 0-5.1-2.1-5.1-4.9 0-3 2.5-5 5.7-4.6v2.6c-.5-.2-1-.2-1.5-.1-1.1.2-1.8 1-1.7 2.2.1 1.1 1 1.9 2.1 1.9 1.3 0 2.2-1 2.2-2.5V3h3.4z" /></svg>
+          </a>
+          <a class="pc-social" href="https://www.threads.com/@spextrobotix" target="_blank" rel="noopener noreferrer" aria-label="Threads">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.3 11.2c-.1 0-.2-.1-.3-.1-.2-3-1.8-4.7-4.5-4.7-1.6 0-3 .7-3.8 2l1.5 1c.6-.9 1.5-1.1 2.3-1.1 1 0 1.8.3 2.2 1 .3.4.5 1 .5 1.7-.7-.1-1.4-.2-2.2-.1-2.4.1-3.9 1.5-3.8 3.4.1 1 .6 1.8 1.4 2.3.7.4 1.6.6 2.5.6 1.2-.1 2.2-.5 2.8-1.4.5-.6.8-1.4.9-2.4.6.4 1.1.9 1.3 1.5.5 1.1.5 2.8-.9 4.2-1.2 1.2-2.7 1.8-4.9 1.8-2.4 0-4.2-.8-5.4-2.3C4.6 17 4 15 4 12.5s.6-4.5 1.7-5.9C6.9 5.1 8.7 4.3 11.1 4.3c2.4 0 4.3.8 5.4 2.4.6.8 1 1.8 1.2 3l1.9-.5c-.3-1.5-.8-2.8-1.6-3.8C17.5 3.1 14.9 2 11.9 2h-.8C8.1 2 5.8 3 4.3 4.9 2.9 6.6 2.2 9 2.1 11.9v.2c0 2.9.7 5.3 2.2 7 1.5 1.9 3.8 2.9 6.8 2.9h.8c2.7 0 4.6-.7 6.2-2.3 2.1-2.1 2-4.7 1.3-6.3-.5-1.1-1.4-2-2.6-2.7l-.5-.4z" /></svg>
+          </a>
+          <a class="pc-social pc-social--brave1" href="https://market-brave1.delta.mil.gov.ua/lohistychni-kolisni/5423/" target="_blank" rel="noopener noreferrer" aria-label="BRAVE1 Market">
+            <img src="../assets/partner-brave1.webp" alt="" loading="lazy" decoding="async" />
+          </a>
+        </div>
+        <a class="pc-footer-link" href="privacy.html">Політика конфіденційності</a>
+        <a class="pc-footer-link" href="terms.html">Умови використання</a>
+        <p class="pc-footer-copyright">Asymmetrica Ltd. 2026. Всі права захищені.</p>
+      </div>
+    </section>
+
+  </div>
+  <div class="pc-toast js-pc-toast" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#FFCA08" stroke-width="2.2"><path d="M20 6L9 17l-5-5" /></svg>
+    <span>Запит надіслано. Інженерна команда зв'яжеться з вами.</span>
+  </div>
+
+  <script src="../js/countries.js?v=5"></script>
+  <script src="../js/contact-form.js?v=3"></script>
+  <script src="../js/mobile-menu.js?v=1"></script>
+</body>
+</html>
