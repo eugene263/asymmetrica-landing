@@ -103,7 +103,12 @@
       { src: '../assets/pano-7.webp', alt: 'НРК Spextr зі знятим кузовом',            ratio: 1400 / 933 },
       { src: '../assets/pano-8.webp', alt: 'НРК Spextr з мінним обладнанням',         ratio: 934 / 1400 },
       { src: '../assets/pano-9.webp', alt: 'НРК Spextr біля мішків з піском',         ratio: 1050 / 1400 },
-      { src: '../assets/pano-10.webp', alt: 'НРК Spextr на позиції з мішками',        ratio: 1050 / 1400 }
+      { src: '../assets/pano-10.webp', alt: 'НРК Spextr на позиції з мішками',        ratio: 1050 / 1400 },
+      { src: '../assets/pano-11.webp', alt: 'НРК Spextr у кар’єрі з камінням',    ratio: 1050 / 1400 },
+      { src: '../assets/pano-12.webp', alt: 'НРК Spextr долає перешкоди в русі',       ratio: 1050 / 1400 },
+      { src: '../assets/pano-13.webp', alt: 'НРК Spextr на кам’яному насипі',     ratio: 1050 / 1400 },
+      { src: '../assets/pano-14.webp', alt: 'НРК Spextr у полі біля струмка',          ratio: 788 / 1400 },
+      { src: '../assets/pano-15.webp', alt: 'НРК Spextr під аркою в Києві взимку',     ratio: 788 / 1400 }
     ],
     grid: [
       { src: '../assets/grid-1.webp', alt: 'Пульт FPV',            ratio: 1400 / 800 },
