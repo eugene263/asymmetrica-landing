@@ -96,7 +96,12 @@
     pano: [
       { src: '../assets/pano-1.webp', alt: 'НРК на мховій купині', ratio: 1133 / 780 },
       { src: '../assets/pano-2.webp', alt: 'НРК в ангарі',        ratio: 1133 / 780 },
-      { src: '../assets/pano-3.webp', alt: 'НРК у струмку',        ratio: 1121 / 779 }
+      { src: '../assets/pano-3.webp', alt: 'НРК у струмку',        ratio: 1121 / 779 },
+      { src: '../assets/pano-4.webp', alt: 'НРК Spextr і крило на полі',              ratio: 1050 / 1400 },
+      { src: '../assets/pano-5.webp', alt: 'НРК Spextr на випробувальному полігоні',  ratio: 1050 / 1400 },
+      { src: '../assets/pano-6.webp', alt: 'НРК Spextr крупним планом на полігоні',   ratio: 1050 / 1400 },
+      { src: '../assets/pano-7.webp', alt: 'НРК Spextr зі знятим кузовом',            ratio: 1400 / 933 },
+      { src: '../assets/pano-8.webp', alt: 'НРК Spextr з мінним обладнанням',         ratio: 934 / 1400 }
     ],
     grid: [
       { src: '../assets/grid-1.webp', alt: 'Пульт FPV',            ratio: 1400 / 800 },
