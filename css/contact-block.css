@@ -95,7 +95,7 @@
 
 .pc-social { width: 34px; height: 34px; border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; flex-shrink: 0; background: #0a0a0a; color: var(--ink); transition: transform .2s ease, opacity .2s ease, color .2s ease; }
 
-.pc-social svg { width: 18px; height: 18px; }
+.pc-social svg, .pc-social img { width: 18px; height: 18px; }
 
 .pc-social--brave1 img { width: 100%; height: 100%; object-fit: cover; }
 

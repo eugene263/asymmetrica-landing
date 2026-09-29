@@ -55,7 +55,7 @@ a:hover { color: #fff; }
 
 .k2-social { width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; color: var(--ink); opacity: .9; transition: opacity .18s, transform .18s, color .18s; }
 
-.k2-social svg { width: 22px; height: 22px; }
+.k2-social svg, .k2-social img { width: 22px; height: 22px; }
 
 .k2-social:hover { opacity: 1; transform: translateY(-2px); color: var(--accent); }
 

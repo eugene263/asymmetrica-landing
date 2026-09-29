@@ -521,7 +521,7 @@ body.is-lightbox-open, body.is-menu-open { overflow: hidden; }
 
 .social { width: 36px; height: 36px; border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; flex-shrink: 0; background: var(--panel); color: var(--ink); transition: transform .2s ease, opacity .2s ease; }
 
-.social svg, .to-top svg { width: 20px; height: 20px; }
+.social svg, .social img, .to-top svg { width: 20px; height: 20px; }
 
 .social--brave1 img { width: 100%; height: 100%; object-fit: cover; }
 
