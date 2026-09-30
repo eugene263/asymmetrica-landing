@@ -49,11 +49,15 @@ a:hover { color: #fff; }
 
 .gs-hero__logo { width: 84px; height: auto; object-fit: contain; margin-top: 0; }
 
-.gs-socials { display: grid; grid-template-columns: repeat(4, 30px); gap: 10px; flex-basis: 100%; margin-top: 4px; justify-content: start; }
+.gs-socials { display: grid; grid-template-columns: repeat(5, 30px); gap: 10px; flex-basis: 100%; margin-top: 4px; justify-content: start; }
 
-.gs-social { width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; color: var(--ink); opacity: .9; transition: opacity .18s, transform .18s, color .18s; }
+.gs-social { width: 30px; height: 30px; border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; color: var(--ink); opacity: .9; transition: opacity .18s, transform .18s, color .18s; }
 
-.gs-social svg, .gs-social img { width: 22px; height: 22px; }
+.gs-social svg { width: 22px; height: 22px; }
+
+.gs-social__threads { display: block; width: 22px; height: 22px; background-color: currentColor; -webkit-mask: url('../assets/icon-threads.webp') center / contain no-repeat; mask: url('../assets/icon-threads.webp') center / contain no-repeat; }
+
+.gs-social--brave1 img { width: 100%; height: 100%; object-fit: cover; }
 
 .gs-social:hover { opacity: 1; transform: translateY(-2px); color: var(--accent); }
 
@@ -183,7 +187,7 @@ body.is-menu-open { overflow: hidden; }
 
   .gs-hero__logo { width: 120px; margin-top: -14px; }
 
-  .gs-socials { gap: 8px; grid-template-columns: repeat(2, 34px); flex-basis: initial; justify-content: initial; margin-top: initial; }
+  .gs-socials { gap: 8px; grid-template-columns: repeat(3, 34px); flex-basis: initial; justify-content: initial; margin-top: initial; }
 
   .gs-social { width: 34px; height: 34px; }
 
