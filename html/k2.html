@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/k2.css?v=10" />
+  <link rel="stylesheet" href="../css/k2.css?v=11" />
   <link rel="stylesheet" href="../css/contact-block.css?v=14" />
 </head>
 <body>
@@ -82,10 +82,9 @@
 
       <div class="k2-field__inner">
         <div class="k2-video">
-          <img src="../assets/k2-video-poster.webp" alt="Робота комплексу" loading="lazy" decoding="async" />
-          <button class="k2-play" type="button" aria-label="Відтворити відео">
-            <svg viewBox="0 0 24 24" fill="#fff"><path d="M8 5l11 7-11 7z" /></svg>
-          </button>
+          <video controls preload="none" poster="../assets/k2-video-poster.webp" playsinline>
+            <source src="../assets/k2-video.mp4" type="video/mp4" />
+          </video>
         </div>
 
         <div class="k2-field__row">
