@@ -440,7 +440,6 @@
   var autoScrollers = [];
   [
     { row: '.partners__row', speed: 0.5 },
-    { row: '.media__row', speed: 0.4 },
     { row: '.schemes__row', speed: 0.45 }
   ].forEach(function (cfg) {
     var row = document.querySelector(cfg.row);
