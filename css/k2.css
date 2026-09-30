@@ -30,7 +30,9 @@ a:hover { color: #fff; }
 
 .k2-hero { position: relative; height: 78vh; overflow: hidden; min-height: 620px; }
 
-.k2-hero__bg, .k2-video video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.k2-hero__bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+
+.k2-video video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
 
 .k2-hero__scrim { position: absolute; inset: 0; background: linear-gradient(180deg,
     rgba(7,7,7,.35) 0%, transparent 30%, rgba(7,7,7,.55) 82%, var(--bg) 100%); }
@@ -122,7 +124,7 @@ body.is-menu-open { overflow: hidden; }
 
 .k2-field__inner { position: relative; z-index: 2; }
 
-.k2-video { position: relative; width: 1240px; max-width: 100%; height: 300px; margin: 0 auto; border: 1px solid rgba(255,255,255,.14); overflow: hidden; }
+.k2-video { position: relative; width: 1240px; max-width: 100%; aspect-ratio: 16 / 9; margin: 0 auto; background: #000; border: 1px solid rgba(255,255,255,.14); overflow: hidden; }
 
 .k2-field__row { display: flex; align-items: flex-start; justify-content: space-between; gap: 40px; padding-top: 60px; flex-direction: column; }
 
@@ -210,8 +212,6 @@ body.is-menu-open { overflow: hidden; }
 
   .k2-field { padding-bottom: 160px; }
 
-  .k2-video { height: 420px; }
-
   .k2-field__row { padding-top: 110px; flex-direction: initial; }
 
   .k2-field__text { gap: 44px; width: 1000px; font-size: 17px; line-height: 1.7; text-align: justify; }
@@ -257,8 +257,6 @@ body.is-menu-open { overflow: hidden; }
   .k2-hero__tick { display: initial; }
 
   .k2-hero__row { padding-top: 190px; }
-
-  .k2-video { height: 560px; }
 
   .k2-field__row { gap: 80px; }
 
