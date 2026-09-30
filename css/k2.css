@@ -51,15 +51,13 @@ a:hover { color: #fff; }
 
 .k2-hero__logo { width: 84px; height: auto; object-fit: contain; margin-top: 0; }
 
-.k2-socials { display: grid; grid-template-columns: repeat(5, 30px); gap: 10px; flex-basis: 100%; margin-top: 4px; justify-content: start; }
+.k2-socials { display: grid; grid-template-columns: repeat(4, 30px); gap: 10px; flex-basis: 100%; margin-top: 4px; justify-content: start; }
 
 .k2-social { width: 30px; height: 30px; border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; color: var(--ink); opacity: .9; transition: opacity .18s, transform .18s, color .18s; }
 
 .k2-social svg { width: 22px; height: 22px; }
 
 .k2-social__threads { display: block; width: 22px; height: 22px; background-color: currentColor; -webkit-mask: url('../assets/icon-threads.webp') center / contain no-repeat; mask: url('../assets/icon-threads.webp') center / contain no-repeat; }
-
-.k2-social--brave1 img { width: 100%; height: 100%; object-fit: cover; }
 
 .k2-social:hover { opacity: 1; transform: translateY(-2px); color: var(--accent); }
 
@@ -208,7 +206,7 @@ body.is-menu-open { overflow: hidden; }
 
   .k2-hero__logo { width: 120px; margin-top: -14px; }
 
-  .k2-socials { gap: 8px; grid-template-columns: repeat(3, 34px); flex-basis: initial; justify-content: initial; margin-top: initial; }
+  .k2-socials { gap: 8px; grid-template-columns: repeat(2, 34px); flex-basis: initial; justify-content: initial; margin-top: initial; }
 
   .k2-social, .k2-play svg { width: 34px; height: 34px; }
 
