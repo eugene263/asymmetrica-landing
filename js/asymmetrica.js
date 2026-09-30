@@ -115,7 +115,11 @@
       { src: '../assets/grid-2.webp', alt: 'Крило в польоті',              ratio: 1400 / 788 },
       { src: '../assets/grid-3.webp', alt: 'Крила на стенді у майстерні',  ratio: 1050 / 1400 },
       { src: '../assets/grid-4.webp', alt: 'Крило на пусковому станку',    ratio: 1050 / 1400 },
-      { src: '../assets/grid-5.webp', alt: 'Підготовка крила до польоту',  ratio: 1050 / 1400 }
+      { src: '../assets/grid-5.webp', alt: 'Підготовка крила до польоту',  ratio: 1050 / 1400 },
+      { src: '../assets/grid-6.webp', alt: 'Пілоти в FPV-окулярах на полігоні', ratio: 1400 / 788 },
+      { src: '../assets/grid-7.webp', alt: 'Налаштування антени',               ratio: 1400 / 788 },
+      { src: '../assets/grid-8.webp', alt: 'Запуск крила з руки',               ratio: 1400 / 788 },
+      { src: '../assets/grid-9.webp', alt: 'Запуск крила з катапульти',         ratio: 1400 / 788 }
     ]
   };
 
