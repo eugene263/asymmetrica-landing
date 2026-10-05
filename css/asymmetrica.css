@@ -98,6 +98,7 @@ html.lang-en [data-lang="en"] { display: inline; }
 .brandbar__logo { height: 30px; width: auto; object-fit: contain; transition: opacity .2s ease; cursor: pointer; }
 
 .brandbar__icon { height: 30px; width: auto; object-fit: contain; }
+.brandbar__link { display: inline-flex; line-height: 0; }
 
 .brandbar__logo:hover { opacity: .8; }
 
