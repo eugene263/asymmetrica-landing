@@ -161,6 +161,10 @@ body.is-menu-open { overflow: hidden; }
 
 .gs-gallery--3 { grid-template-columns: 1fr; gap: 12px; }
 
+.gs-akb { background: var(--bg-deep); padding: 70px 0 0; }
+
+.gs-akb img { display: block; width: 100%; height: auto; }
+
 .gs-shot { width: 100%; height: 260px; object-fit: cover; transition: transform .35s cubic-bezier(.2,0,.1,1), filter .35s; }
 
 .gs-shot:hover { transform: scale(1.03); filter: brightness(1.08); }
