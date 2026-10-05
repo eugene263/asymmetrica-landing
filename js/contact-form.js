@@ -23,10 +23,16 @@
       if (touched[f.name]) window.SPEXTR_validateField(f);
     });
   });
-  form.addEventListener('submit', function (e) {
+  form.addEventListener('submit', async function (e) {
     e.preventDefault();
     form.querySelectorAll('[required]').forEach(function (f) { touched[f.name] = true; });
     if (!window.SPEXTR_validateForm(form)) return;
+    try {
+      var response = await fetch('/api/contact', { method: 'POST', body: new FormData(form) });
+      if (!response.ok) return;
+    } catch (err) {
+      return;
+    }
     form.reset();
     touched = {};
     if (toast) {
