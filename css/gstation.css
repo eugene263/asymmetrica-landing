@@ -161,7 +161,13 @@ body.is-menu-open { overflow: hidden; }
 
 .gs-gallery--3 { grid-template-columns: 1fr; gap: 12px; }
 
-.gs-akb { background: var(--bg-deep); padding: 70px 0 0; }
+.gs-akb { position: relative; background: var(--bg-deep); padding: 70px 0 0; }
+
+.gs-akb__text { padding: 0 var(--gutter) 32px; }
+
+.gs-akb__text p { font-size: 15px; line-height: 1.75; font-weight: 500; text-align: left; }
+
+.gs-akb__text b { font-weight: 800; }
 
 .gs-akb img { display: block; width: 100%; height: auto; }
 
@@ -240,4 +246,12 @@ body.is-menu-open { overflow: hidden; }
 
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; scroll-behavior: auto !important; }
+}
+
+@media (min-width: 721px) {
+
+  .gs-akb__text { position: absolute; top: calc(70px + 5%); left: 0; right: 0; padding: 0 var(--gutter); z-index: 1; }
+
+  .gs-akb__text p { font-size: clamp(14px, 1.2vw, 18px); line-height: 1.75; }
+
 }
