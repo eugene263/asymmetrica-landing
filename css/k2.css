@@ -146,6 +146,8 @@ body.is-menu-open { overflow: hidden; }
 
 .k2-mod__unit { width: 100%; max-width: 100%; object-fit: contain; flex: none; }
 
+.k2-mod--custom .k2-mod__unit { width: 50%; }
+
 .k2-mod__unit--a { animation: k2-float 6.5s ease-in-out infinite; }
 
 .k2-mod__unit--b { animation: k2-float 5.6s ease-in-out infinite; animation-delay: -1.8s; }
@@ -226,6 +228,8 @@ body.is-menu-open { overflow: hidden; }
 
   .k2-mod__unit { width: 50%; }
 
+  .k2-mod--custom .k2-mod__unit { width: 25%; }
+
   .k2-mod__lead { padding-top: 36px; }
 
   .k2-mod__title { font-size: 36px; }
@@ -265,6 +269,8 @@ body.is-menu-open { overflow: hidden; }
   .k2-mod__head { gap: 70px; }
 
   .k2-mod__unit { width: 640px; }
+
+  .k2-mod--custom .k2-mod__unit { width: 320px; }
 
 }
 
