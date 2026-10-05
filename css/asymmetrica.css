@@ -95,12 +95,8 @@ html.lang-en [data-lang="en"] { display: inline; }
 
 .brandbar { display: flex; align-items: center; gap: 16px; }
 
-.brandbar__logo { height: 30px; width: auto; object-fit: contain; transition: opacity .2s ease; cursor: pointer; }
-
 .brandbar__icon { height: 30px; width: auto; object-fit: contain; }
 .brandbar__link { display: inline-flex; line-height: 0; }
-
-.brandbar__logo:hover { opacity: .8; }
 
 .hero__nav-group { display: contents; }
 
@@ -575,8 +571,6 @@ body.is-lightbox-open, body.is-menu-open { overflow: hidden; }
   .brandbar { gap: 32px; }
 
   .form__inner { gap: 28px; }
-
-  .brandbar__logo { height: 40px; }
 
   .brandbar__icon { height: 40px; width: 40px; }
 
