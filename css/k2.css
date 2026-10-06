@@ -51,6 +51,8 @@ a:hover { color: #fff; }
 
 .k2-hero__tagline { font-size: 14px; font-weight: 600; line-height: 1.5; letter-spacing: .08em; }
 
+.k2-hero__logo { width: 84px; height: auto; object-fit: contain; margin-top: 0; }
+
 .k2-socials { display: grid; grid-template-columns: repeat(4, 30px); gap: 10px; flex-basis: 100%; margin-top: 4px; justify-content: start; }
 
 .k2-social { width: 30px; height: 30px; border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; color: var(--ink); opacity: .9; transition: opacity .18s, transform .18s, color .18s; }
@@ -199,6 +201,8 @@ body.is-menu-open { overflow: hidden; }
   .k2-back { top: 110px; }
 
   .k2-hero__tagline { font-size: 16px; }
+
+  .k2-hero__logo { width: 120px; margin-top: -14px; }
 
   .k2-socials { gap: 8px; grid-template-columns: repeat(2, 34px); flex-basis: initial; justify-content: initial; margin-top: initial; }
 
