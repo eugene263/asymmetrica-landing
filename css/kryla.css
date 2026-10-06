@@ -47,8 +47,6 @@ a:hover { color: #fff; }
 
 .wg-hero__tagline { font-size: 14px; font-weight: 600; line-height: 1.5; letter-spacing: .08em; }
 
-.wg-hero__logo { width: 84px; height: auto; object-fit: contain; margin-top: 0; }
-
 .wg-socials { display: grid; grid-template-columns: repeat(4, 30px); gap: 10px; flex-basis: 100%; margin-top: 4px; justify-content: start; }
 
 .wg-social { width: 30px; height: 30px; border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; color: var(--ink); opacity: .9; transition: opacity .18s, transform .18s, color .18s; }
@@ -182,8 +180,6 @@ body.is-menu-open { overflow: hidden; }
   .wg-back { top: 110px; }
 
   .wg-hero__tagline { font-size: 16px; }
-
-  .wg-hero__logo { width: 120px; margin-top: -14px; }
 
   .wg-socials { gap: 8px; grid-template-columns: repeat(2, 34px); flex-basis: initial; justify-content: initial; margin-top: initial; }
 
