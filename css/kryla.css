@@ -106,6 +106,16 @@ body.is-menu-open { overflow: hidden; }
 .wg-intro p { font-size: 13px; line-height: 1.65; font-weight: 500; letter-spacing: .03em; text-align: left; text-wrap: pretty; }
 
 /* =====================================================================
+   PRESENTATION VIDEO
+   ===================================================================== */
+
+.wg-video-section { position: relative; background: var(--bg-deep); padding: 0 var(--gutter) 70px; }
+
+.wg-video { position: relative; width: 1240px; max-width: 100%; aspect-ratio: 16 / 9; margin: 0 auto; background: #000; border: 1px solid rgba(255,255,255,.14); overflow: hidden; }
+
+.wg-video video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+
+/* =====================================================================
    03-06 PRODUCT LINE (one section per wing model)
    ===================================================================== */
 
