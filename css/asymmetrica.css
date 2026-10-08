@@ -215,6 +215,16 @@ html.lang-en [data-lang="en"] { display: inline; }
 .card--link:focus-visible { outline: 2px solid var(--accent); outline-offset: 6px; }
 
 /* =====================================================================
+   PRESENTATION VIDEO
+   ===================================================================== */
+
+.home-video-section { padding: 0 var(--pad) 70px; background: var(--bg); display: flex; justify-content: center; }
+
+.home-video { position: relative; width: 1240px; max-width: 100%; aspect-ratio: 16 / 9; background: #000; border: 1px solid rgba(255,255,255,.14); overflow: hidden; }
+
+.home-video video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+
+/* =====================================================================
    UGV WIREFRAME SCHEMES
    ===================================================================== */
 
