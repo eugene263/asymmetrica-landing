@@ -168,7 +168,7 @@ body.is-menu-open { overflow: hidden; }
 
 /* spec table ------------------------------------------------------- */
 
-.k2-specs { display: flex; flex-direction: column; gap: 14px; }
+.k2-specs { display: flex; flex-direction: column; gap: 14px; width: 100%; }
 
 .k2-spec { display: flex; align-items: baseline; gap: 16px; font-size: 12px; font-weight: 600; letter-spacing: .06em; color: var(--ink-spec); }
 
