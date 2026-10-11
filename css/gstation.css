@@ -131,7 +131,7 @@ body.is-menu-open { overflow: hidden; }
 
 /* spec table ------------------------------------------------------- */
 
-.gs-specs { display: flex; flex-direction: column; gap: 14px; padding-top: 40px; }
+.gs-specs { display: flex; flex-direction: column; gap: 14px; }
 
 .gs-spec { display: flex; align-items: baseline; gap: 6px 12px; font-size: 12px; font-weight: 600; letter-spacing: .06em; color: var(--ink-spec); flex-wrap: wrap; }
 
@@ -210,8 +210,6 @@ body.is-menu-open { overflow: hidden; }
   .gs-mod__sub { max-width: 520px; font-size: 14px; text-align: justify; }
 
   .gs-mod__arrow { width: 78px; height: 78px; }
-
-  .gs-specs { padding-top: 60px; }
 
   .gs-spec { font-size: 13px; letter-spacing: .1em; }
 

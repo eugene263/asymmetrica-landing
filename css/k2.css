@@ -168,7 +168,7 @@ body.is-menu-open { overflow: hidden; }
 
 /* spec table ------------------------------------------------------- */
 
-.k2-specs { display: flex; flex-direction: column; gap: 14px; padding-top: 48px; }
+.k2-specs { display: flex; flex-direction: column; gap: 14px; }
 
 .k2-spec { display: flex; align-items: baseline; gap: 16px; font-size: 12px; font-weight: 600; letter-spacing: .06em; color: var(--ink-spec); }
 
@@ -178,7 +178,7 @@ body.is-menu-open { overflow: hidden; }
 
 .k2-spec__rule { flex: 1; height: 1px; background: rgba(255,255,255,.32); }
 
-.k2-ip { padding-top: 26px; font-size: 13px; font-weight: 600; letter-spacing: .1em; color: var(--ink-spec); }
+.k2-ip { font-size: 13px; font-weight: 600; letter-spacing: .1em; color: var(--ink-spec); }
 
 /* =====================================================================
    05 / 07 GALLERIES
@@ -239,8 +239,6 @@ body.is-menu-open { overflow: hidden; }
   .k2-mod__arrow { width: 78px; height: 78px; margin-top: 24px; }
 
   .k2-mod__body { gap: 38px; font-size: 14px; text-align: justify; padding-top: 70px; }
-
-  .k2-specs { padding-top: 70px; }
 
   .k2-spec { font-size: 13px; letter-spacing: .1em; }
 
