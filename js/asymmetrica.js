@@ -94,21 +94,23 @@
      (via CSS aspect-ratio) instead of a fixed box that crops the photo. */
   var TRACKS = {
     pano: [
-      { src: '../assets/pano-1.webp', alt: 'НРК на мховій купині', ratio: 1133 / 780 },
-      { src: '../assets/pano-2.webp', alt: 'НРК в ангарі',        ratio: 1400 / 934 },
-      { src: '../assets/pano-3.webp', alt: 'НРК у струмку',        ratio: 1121 / 779 },
-      { src: '../assets/pano-4.webp', alt: 'НРК Spextr і крило на полі',              ratio: 1050 / 1400 },
-      { src: '../assets/pano-5.webp', alt: 'НРК Spextr на випробувальному полігоні',  ratio: 1050 / 1400 },
-      { src: '../assets/pano-6.webp', alt: 'НРК Spextr крупним планом на полігоні',   ratio: 1050 / 1400 },
-      { src: '../assets/pano-7.webp', alt: 'НРК Spextr зі знятим кузовом',            ratio: 1400 / 933 },
-      { src: '../assets/pano-8.webp', alt: 'НРК Spextr з мінним обладнанням',         ratio: 934 / 1400 },
-      { src: '../assets/pano-9.webp', alt: 'НРК Spextr біля мішків з піском',         ratio: 1050 / 1400 },
-      { src: '../assets/pano-10.webp', alt: 'НРК Spextr на позиції з мішками',        ratio: 1050 / 1400 },
-      { src: '../assets/pano-11.webp', alt: 'НРК Spextr у кар’єрі з камінням',    ratio: 1050 / 1400 },
-      { src: '../assets/pano-12.webp', alt: 'НРК Spextr долає перешкоди в русі',       ratio: 1050 / 1400 },
-      { src: '../assets/pano-13.webp', alt: 'НРК Spextr на кам’яному насипі',     ratio: 1050 / 1400 },
-      { src: '../assets/pano-14.webp', alt: 'НРК Spextr у полі біля струмка',          ratio: 788 / 1400 },
-      { src: '../assets/pano-15.webp', alt: 'НРК Spextr під аркою в Києві взимку',     ratio: 788 / 1400 }
+      { src: '../assets/pano-1.webp', alt: 'НРК у повітрі з мінним обладнанням',        ratio: 934 / 1400 },
+      { src: '../assets/pano-2.webp', alt: 'НРК і крило на траві',                      ratio: 1050 / 1400 },
+      { src: '../assets/pano-3.webp', alt: 'Двигун крила крупним планом',               ratio: 1400 / 933 },
+      { src: '../assets/pano-4.webp', alt: 'НРК з написом IN ZSU WE TRUST',             ratio: 1400 / 934 },
+      { src: '../assets/pano-5.webp', alt: 'НРК з модулем-кузовом біля мішків',         ratio: 1050 / 1400 },
+      { src: '../assets/pano-6.webp', alt: 'Крило на пусковому станку проти неба',      ratio: 1050 / 1400 },
+      { src: '../assets/pano-7.webp', alt: 'НРК у студійному світлі',                   ratio: 1400 / 933 },
+      { src: '../assets/pano-8.webp', alt: 'НРК на снігу під аркою в Києві',            ratio: 788 / 1400 },
+      { src: '../assets/pano-9.webp', alt: 'Наземна станція керування',                 ratio: 1400 / 792 },
+      { src: '../assets/pano-10.webp', alt: 'НРК з ящиком боєкомплекту на камінні',     ratio: 1050 / 1400 },
+      { src: '../assets/pano-11.webp', alt: 'НРК в динамічній позі',                    ratio: 1400 / 1061 },
+      { src: '../assets/pano-12.webp', alt: 'Крило на пусковому станку в полі',         ratio: 1400 / 788 },
+      { src: '../assets/pano-13.webp', alt: 'НРК з кузовом-кліткою на кам’янистому ґрунті', ratio: 1050 / 1400 },
+      { src: '../assets/pano-14.webp', alt: 'НРК у воді на болоті',                     ratio: 787 / 1400 },
+      { src: '../assets/pano-15.webp', alt: 'Крило в польоті',                          ratio: 1400 / 788 },
+      { src: '../assets/pano-16.webp', alt: 'НРК крупним планом',                       ratio: 1400 / 1130 },
+      { src: '../assets/pano-17.webp', alt: 'НРК з великими колесами на фоні шин',      ratio: 1050 / 1400 }
     ],
     grid: [
       { src: '../assets/grid-1.webp', alt: 'Пульт FPV',                    ratio: 1400 / 788 },
