@@ -172,11 +172,11 @@ body.is-menu-open { overflow: hidden; }
 
 .k2-spec { display: flex; align-items: baseline; gap: 16px; font-size: 12px; font-weight: 600; letter-spacing: .06em; color: var(--ink-spec); }
 
-.k2-spec dt { white-space: nowrap; }
+.k2-spec dt { white-space: nowrap; min-width: 150px; }
 
 .k2-spec dd { margin: 0; white-space: nowrap; }
 
-.k2-spec__rule { flex: 1; height: 1px; background: rgba(255,255,255,.32); }
+.k2-spec__rule { flex: 1; height: 1px; background: rgba(255,255,255,.16); }
 
 .k2-ip { font-size: 13px; font-weight: 600; letter-spacing: .1em; color: var(--ink-spec); }
 
@@ -241,6 +241,8 @@ body.is-menu-open { overflow: hidden; }
   .k2-mod__body { gap: 38px; font-size: 14px; text-align: justify; padding-top: 70px; }
 
   .k2-spec { font-size: 13px; letter-spacing: .1em; }
+
+  .k2-spec dt { min-width: 190px; }
 
   .k2-gallery--3 { gap: 22px; grid-template-columns: repeat(3, 1fr); }
 

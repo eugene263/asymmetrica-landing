@@ -139,7 +139,7 @@ body.is-menu-open { overflow: hidden; }
 
 .gs-spec dd { margin: 0; white-space: nowrap; }
 
-.gs-spec__rule { flex: 1; height: 0; background: rgba(255,255,255,.32); flex-basis: 100%; }
+.gs-spec__rule { flex: 1; height: 0; background: rgba(255,255,255,.16); flex-basis: 100%; }
 
 .gs-desc { padding-top: 32px; max-width: 720px; }
 
@@ -177,7 +177,7 @@ body.is-menu-open { overflow: hidden; }
 
   .gs-spec { gap: 16px; flex-wrap: initial; }
 
-  .gs-spec dt { font-size: inherit; }
+  .gs-spec dt { font-size: inherit; min-width: 150px; }
 
   .gs-spec__rule { height: 1px; flex-basis: initial; }
 
@@ -212,6 +212,8 @@ body.is-menu-open { overflow: hidden; }
   .gs-mod__arrow { width: 78px; height: 78px; }
 
   .gs-spec { font-size: 13px; letter-spacing: .1em; }
+
+  .gs-spec dt { min-width: 190px; }
 
   .gs-gallery--3 { gap: 22px; grid-template-columns: repeat(3, 1fr); }
 
