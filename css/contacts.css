@@ -1,0 +1,123 @@
+/* =====================================================================
+   CONTACTS — standalone page, opened from the main nav "КОНТАКТИ" button.
+   Same design system as kryla.css / k2.css / gstation.css.
+   ===================================================================== */
+
+:root { --bg: #070707; --ink: #fefefe; --ink-mute: #c9c9c9; --accent: #FFCA08; --gutter: clamp(20px, 7.3vw, 140px);
+  --font: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif; }
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body { background: var(--bg); color: var(--ink); font-family: var(--font); overflow-x: hidden; }
+
+a { color: var(--accent); text-decoration: none; }
+
+a:hover { color: #fff; }
+
+:where(a, button):focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* =====================================================================
+   TOPBAR
+   ===================================================================== */
+
+.ct-topbar { position: relative; z-index: 3; display: flex; align-items: center; justify-content: space-between; padding: 24px var(--gutter); }
+
+.ct-back { font-size: 12px; font-weight: 600; letter-spacing: .12em; color: var(--ink); text-transform: uppercase; transition: color .18s; }
+
+.ct-back:hover { color: var(--accent); }
+
+/* mobile burger + dropdown menu -------------------------------------- */
+
+.burger { display: flex; flex-direction: column; justify-content: space-between; width: 30px; height: 22px; padding: 0; background: none; border: none; cursor: pointer; }
+
+.burger span { display: block; width: 100%; height: 2px; background: var(--ink); transition: transform .25s ease, opacity .2s ease; }
+
+.burger[aria-expanded="true"] span:nth-child(1) { transform: translateY(10px) rotate(45deg); }
+
+.burger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+
+.burger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-10px) rotate(-45deg); }
+
+.menu-backdrop { display: none; position: fixed; inset: 0; z-index: 88; background: rgba(0,0,0,.55); opacity: 0; pointer-events: none; transition: opacity .25s ease; }
+
+.menu-backdrop.is-open { display: block; opacity: 1; pointer-events: auto; }
+
+.mobile-menu { display: flex; flex-direction: column; gap: 4px; position: fixed; top: 0; right: 0; bottom: 0; z-index: 89; width: min(78vw, 320px); padding: 88px 28px 32px; background: #0a0a0a; border-left: 1px solid rgba(255,255,255,.1); transform: translateX(100%); transition: transform .3s cubic-bezier(.2,0,.1,1); overflow-y: auto; }
+
+.mobile-menu.is-open { transform: translateX(0); }
+
+.mobile-menu__close { position: absolute; top: 20px; right: 20px; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; background: none; border: none; color: var(--ink); cursor: pointer; transition: color .18s; }
+
+.mobile-menu__close svg { width: 22px; height: 22px; }
+
+.mobile-menu__close:hover, .mobile-menu__link:hover, .mobile-menu__sublink:hover { color: var(--accent); }
+
+.mobile-menu__link { display: block; padding: 14px 0; color: var(--ink); font-size: 16px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; border-bottom: 1px solid rgba(255,255,255,.1); }
+
+.mobile-menu__sub { display: flex; flex-direction: column; padding: 2px 0 10px 16px; }
+
+.mobile-menu__sublink { padding: 10px 0; color: var(--ink-mute); font-size: 13px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
+
+body.is-menu-open { overflow: hidden; }
+
+@media (min-width: 721px) {
+
+  .burger, .mobile-menu, .menu-backdrop { display: none; }
+
+}
+
+/* =====================================================================
+   STAGE — the contacts artwork with clickable social icons overlaid
+   ===================================================================== */
+
+.ct-stage { position: relative; width: 100%; aspect-ratio: 1984 / 1320; overflow: hidden; background: var(--bg); }
+
+.ct-stage__bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.ct-icon { position: absolute; top: var(--cy); left: var(--cx); transform: translate(-50%, -50%); width: clamp(30px, 3.6vw, 70px); aspect-ratio: 1 / 1; border-radius: 22%; overflow: hidden; display: block; transition: transform .2s ease, filter .2s ease; }
+
+.ct-icon img { display: block; width: 100%; height: 100%; object-fit: contain; }
+
+.ct-icon:hover { transform: translate(-50%, -50%) scale(1.1); filter: brightness(1.1); }
+
+.ct-icon--yt { width: clamp(64px, 7.6vw, 150px); aspect-ratio: 150 / 59; border-radius: 16%; }
+
+.ct-ig-left  { --cx: 13.46%; --cy: 72.54%; }
+.ct-fb-left  { --cx: 17.47%; --cy: 72.54%; }
+.ct-tt-left  { --cx: 13.43%; --cy: 78.90%; }
+
+.ct-ig-right { --cx: 83.49%; --cy: 72.54%; }
+.ct-fb-right { --cx: 87.50%; --cy: 72.54%; }
+.ct-tt-right { --cx: 83.49%; --cy: 78.90%; }
+.ct-th-right { --cx: 87.53%; --cy: 78.90%; }
+.ct-yt-right { --cx: 85.48%; --cy: 84.81%; }
+
+/* =====================================================================
+   FOOTER
+   ===================================================================== */
+
+.ct-footer { padding: 32px var(--gutter) 48px; border-top: 1px solid rgba(255,255,255,.1); }
+
+.ct-footer__info { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; font-size: 12px; }
+
+.ct-footer__link { font-weight: 600; color: var(--ink); text-decoration: none; transition: color .18s; }
+
+.ct-footer__link:hover { color: var(--accent); }
+
+.ct-footer__copy { opacity: .6; margin-top: 6px; color: var(--ink-mute); }
+
+@media (min-width: 721px) {
+
+  .ct-footer { display: flex; align-items: flex-end; justify-content: space-between; }
+
+  .ct-footer__info { flex-direction: row; align-items: center; gap: 28px; font-size: 13px; }
+
+  .ct-footer__copy { margin-top: 0; }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; scroll-behavior: auto !important; }
+}
