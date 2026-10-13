@@ -157,7 +157,7 @@ body.is-menu-open { overflow: hidden; }
 
 .gs-gallery { background: var(--bg-deep); display: grid; gap: 22px; padding: 70px 0 0; }
 
-.gs-gallery--3 { grid-template-columns: 1fr; gap: 12px; }
+.gs-gallery--3, .gs-gallery--2 { grid-template-columns: 1fr; gap: 12px; }
 
 .gs-akb { position: relative; background: var(--bg-deep); padding: 70px 0 0; }
 
@@ -214,6 +214,8 @@ body.is-menu-open { overflow: hidden; }
   .gs-spec { font-size: 13px; letter-spacing: .1em; }
 
   .gs-gallery--3 { gap: 22px; grid-template-columns: repeat(3, 1fr); }
+
+  .gs-gallery--2 { gap: 22px; grid-template-columns: repeat(2, 1fr); }
 
   .gs-shot { height: 520px; }
 
