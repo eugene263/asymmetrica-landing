@@ -17,6 +17,18 @@
           document.documentElement.lang = 'en';
         }
       } catch (e) {}
+      // Mobile browsers (esp. after a bfcache restore or returning from the
+      // root redirect page) sometimes reopen this page already scrolled
+      // down to wherever the visitor last was, instead of the top. Force a
+      // fresh top-of-page load whenever the URL has no #anchor of its own.
+      try {
+        if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+      } catch (e) {}
+      if (!window.location.hash) {
+        window.addEventListener('pageshow', function () {
+          if (!window.location.hash) window.scrollTo(0, 0);
+        });
+      }
     })();
   </script>
 </head>
