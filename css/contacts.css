@@ -94,6 +94,38 @@ body.is-menu-open { overflow: hidden; }
 .ct-th-right { --cx: 87.53%; --cy: 78.90%; }
 .ct-yt-right { --cx: 85.48%; --cy: 84.81%; }
 
+.ct-mobile { display: none; }
+
+@media (max-width: 720px) {
+
+  .ct-stage { display: none; }
+
+  .ct-mobile { display: block; position: relative; overflow: hidden; background: var(--bg); }
+
+  .ct-mobile__inner { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; gap: 30px; padding: 36px 20px 44px; text-align: center; }
+
+  .ct-mobile__logo { width: 110px; height: auto; }
+
+  .ct-mobile__email { font-size: 15px; font-weight: 800; letter-spacing: .03em; color: var(--ink); }
+
+  .ct-mobile__email:hover { color: var(--accent); }
+
+  .ct-brand { display: flex; flex-direction: column; align-items: center; gap: 18px; width: 100%; max-width: 320px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,.1); }
+
+  .ct-brand:first-of-type { border-top: none; padding-top: 0; }
+
+  .ct-brand__logo { width: 84px; height: 84px; border-radius: 50%; display: block; }
+
+  .ct-brand__icons { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 12px; }
+
+  .ct-brand__icons a { width: 44px; height: 44px; border-radius: 22%; overflow: hidden; display: block; }
+
+  .ct-brand__icons img { width: 100%; height: 100%; object-fit: contain; display: block; }
+
+  .ct-brand__icons-yt { width: auto !important; height: 44px !important; aspect-ratio: 150 / 59; border-radius: 16% !important; }
+
+}
+
 /* =====================================================================
    FOOTER
    ===================================================================== */
