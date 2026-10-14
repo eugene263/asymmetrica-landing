@@ -12,17 +12,28 @@
   var video = document.querySelector('.js-hero-video');
   if (!video || !window.matchMedia) return;
 
-  var isMobile = window.matchMedia('(max-width: 720px)').matches;
-  var src = isMobile ? '../assets/hero-bg-mobile.mp4' : '../assets/hero-bg-desktop.mp4';
+  // Deferred until the rest of the page has finished loading, so this
+  // ~1MB clip doesn't compete for bandwidth with the fonts/images/scripts
+  // needed for first paint — the static hero photo covers that gap.
+  var start = function () {
+    var isMobile = window.matchMedia('(max-width: 720px)').matches;
+    var src = isMobile ? '../assets/hero-bg-mobile.mp4' : '../assets/hero-bg-desktop.mp4';
 
-  var source = document.createElement('source');
-  source.src = src;
-  source.type = 'video/mp4';
-  video.appendChild(source);
-  video.addEventListener('canplay', function () {
-    video.classList.add('is-active');
-  }, { once: true });
-  video.load();
-  var playPromise = video.play();
-  if (playPromise && playPromise.catch) playPromise.catch(function () {});
+    var source = document.createElement('source');
+    source.src = src;
+    source.type = 'video/mp4';
+    video.appendChild(source);
+    video.addEventListener('canplay', function () {
+      video.classList.add('is-active');
+    }, { once: true });
+    video.load();
+    var playPromise = video.play();
+    if (playPromise && playPromise.catch) playPromise.catch(function () {});
+  };
+
+  if (document.readyState === 'complete') {
+    start();
+  } else {
+    window.addEventListener('load', start, { once: true });
+  }
 })();
